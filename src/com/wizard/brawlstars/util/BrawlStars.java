@@ -11,7 +11,7 @@ public class BrawlStars {
 		this.token = token;
 	}
 	
-	public String get() {
-		
+	public BrawlStars(String token) {
+		this.token = token;
 	}
 }
