@@ -1,5 +1,5 @@
 package com.wizard.brawlstars.util;
 
-public class API {
+public class IconDeserializer {
 
 }
