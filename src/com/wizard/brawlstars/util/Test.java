@@ -1,11 +1,12 @@
 package com.wizard.brawlstars.util;
 
 import com.google.gson.Gson;
+import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 
 public class Test {
 
-	@SerializedName("test.test")
+	@JsonAdapter(UsernameDeserializer.class)
 	public int test;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

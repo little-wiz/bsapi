@@ -1,5 +1,6 @@
 package com.wizard.brawlstars.util;
 
+import java.net.URL;
 import java.security.PublicKey;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -24,10 +25,10 @@ public class BrawlStarsAPI {
 	}
 	
 	public BrawlStarsPlayer getPlayerInfo(String tag) {
-		return GSON.fromJson(request(tag, token), )
+		return GSON.fromJson(request(tag), BrawlStarsPlayer.class);
 	}
 	
 	private String request(String url) {
-		HttpsURLConnection connection = 
+		HttpsURLConnection connection = (HttpsURLConnection) new URL(url).openConnection();
 	}
 }
